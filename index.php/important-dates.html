@@ -2,38 +2,40 @@
 <html lang="en-gb" dir="ltr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta charset="utf-8" />
+	<meta charset="utf-8" />
 	<base href="" />
 	<meta name="author" content="Nathan Galli" />
 	<title>Important Dates</title>
 	<link href="../templates/protostar/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-	<link href="../templates/protostar/css/template.css%3F3466884ad7d56c3965a0c8b0f2b5a3c6.css" rel="stylesheet" />
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	<link href="../templates/protostar/css/template.css@cfc6bf7c5bcc4e381b16e50c99c32dc6.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
 	<style>
 
 	h1, h2, h3, h4, h5, h6, .site-title {
 		font-family: 'Open Sans', sans-serif;
 	}
 	</style>
-	<script src="../media/jui/js/jquery.min.js"></script>
-	<script src="../media/jui/js/jquery-noconflict.js"></script>
-	<script src="../media/jui/js/jquery-migrate.min.js"></script>
-	<script src="../media/system/js/caption.js"></script>
-	<script src="../media/jui/js/bootstrap.min.js"></script>
-	<script src="../templates/protostar/js/template.js%3F3466884ad7d56c3965a0c8b0f2b5a3c6"></script>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"8eb25037ac3a2597d4060bfbe1813e8a","system.paths":{"root":"","base":""},"system.keepalive":{"interval":840000,"uri":"\/index.php\/component\/ajax\/?format=json"}}</script>
+	<script src="../media/jui/js/jquery.min.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
+	<script src="../media/jui/js/jquery-noconflict.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
+	<script src="../media/system/js/caption.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
+	<script src="../media/jui/js/bootstrap.min.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
+	<script src="../templates/protostar/js/template.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
+	<!--[if lt IE 9]><script src="/media/jui/js/html5.js?cfc6bf7c5bcc4e381b16e50c99c32dc6"></script><![endif]-->
+	<script src="../media/system/js/core.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
+	<!--[if lt IE 9]><script src="/media/system/js/polyfill.event.js?cfc6bf7c5bcc4e381b16e50c99c32dc6"></script><![endif]-->
+	<script src="../media/system/js/keepalive.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
 	<script>
 jQuery(window).on('load',  function() {
 				new JCaption('img.caption');
-			});
-jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
-window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}if(r){r.open("GET","/index.php?option=com_ajax&format=json",true);r.send(null)}},840000);
+			});jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
 	</script>
 
-	<!--[if lt IE 9]><script src="/media/jui/js/html5.js"></script><![endif]-->
 </head>
 <body class="site com_content view-article no-layout no-task itemid-126">
 	<!-- Body -->
-	<div class="body">
+	<div class="body" id="top">
 		<div class="container">
 			<!-- Header -->
 			<header class="header" role="banner">
@@ -52,8 +54,8 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
 						<div class="sidebar-nav">
 									<div class="moduletable_menu">
 							<h3>Menu</h3>
-						<ul class="nav menu">
-<li class="item-101 default"><a href="../index.php.html" >Home</a></li><li class="item-122"><a href="organization.html" >Organization</a></li><li class="item-123"><a href="program.html" >Program</a></li><li class="item-124"><a href="call-for-papers.html" >Call for Papers</a></li><li class="item-125"><a href="call-for-posters.html" >Call for Posters</a></li><li class="item-126 current active"><a href="important-dates.html" >Important Dates</a></li><li class="item-127"><a href="information-for-presenters.html" >Information for Presenters</a></li><li class="item-128"><a href="supporters.html" >Supporters</a></li><li class="item-129"><a href="http://ldav2015.sci.utah.edu" target="_blank">LDAV 2015</a></li><li class="item-130"><a href="http://ldav2014.sci.utah.edu" target="_blank">LDAV 2014</a></li><li class="item-131"><a href="contact.html" >Contact</a></li></ul>
+						<ul class="nav menu mod-list">
+<li class="item-101 default"><a href="../index.php.html" >Home</a></li><li class="item-122"><a href="organization.html" >Organization</a></li><li class="item-123"><a href="program.html" >Program</a></li><li class="item-124"><a href="call-for-papers.html" >Call for Papers</a></li><li class="item-125"><a href="call-for-posters.html" >Call for Posters</a></li><li class="item-126 current active"><a href="important-dates.html" >Important Dates</a></li><li class="item-127"><a href="information-for-presenters.html" >Information for Presenters</a></li><li class="item-128"><a href="supporters.html" >Supporters</a></li><li class="item-129"><a href="http://ldav2015.sci.utah.edu" target="_blank" rel="noopener noreferrer">LDAV 2015</a></li><li class="item-130"><a href="http://ldav2014.sci.utah.edu" target="_blank" rel="noopener noreferrer">LDAV 2014</a></li><li class="item-131"><a href="contact.html" >Contact</a></li></ul>
 		</div>
 			<div class="moduletable">
 							<h3>Important Dates</h3>
@@ -65,7 +67,7 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
 <p><strong>Poster submission:</strong><br />August 24, 2016</p>
 <p><strong>Symposium:</strong><br />October 23, 2016</p></div>
 		</div>
-			<!--<div class="moduletable">
+			<div class="moduletable">
 							<h3>Login Form</h3>
 						<form action="important-dates.html" method="post" id="login-form" class="form-inline">
 		<div class="userdata">
@@ -97,25 +99,25 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
 		</div>
 				<div id="form-login-submit" class="control-group">
 			<div class="controls">
-				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary">Log in</button>
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary login-button">Log in</button>
 			</div>
 		</div>
 					<ul class="unstyled">
 							<li>
-					<a href="component/users/index.html%3Fview=remind.html">
+					<a href="component/users/index.html@view=remind&amp;Itemid=101.html">
 					Forgot your username?</a>
 				</li>
 				<li>
-					<a href="component/users/index.html%3Fview=reset.html">
+					<a href="component/users/index.html@view=reset&amp;Itemid=101.html">
 					Forgot your password?</a>
 				</li>
 			</ul>
 		<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
-		<input type="hidden" name="return" value="aHR0cDovL2xkYXYub3JnL2luZGV4LnBocC9pbXBvcnRhbnQtZGF0ZXM=" />
-		<input type="hidden" name="88dd0a7ca553802957d4efc69501b4c4" value="1" />	</div>
+		<input type="hidden" name="return" value="aHR0cDovL2xkYXYyMDE2LnNjaS51dGFoLmVkdS9pbmRleC5waHAvaW1wb3J0YW50LWRhdGVz" />
+		<input type="hidden" name="8eb25037ac3a2597d4060bfbe1813e8a" value="1" />	</div>
 	</form>
-		</div>-->
+		</div>
 	
 						</div>
 					</div>
@@ -129,25 +131,26 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
 	<p><img src="../images/banners/ldav-banner.jpg" alt="ldav banner" style="border: 0px solid #000000;" /></p></div>
 		</div>
 			<div class="moduletable">
-						
-<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
-			<li>
-			You are here: &#160;
-		</li>
-	
-				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-									<a itemprop="item" href="../index.php.html" class="pathway"><span itemprop="name">Home</span></a>
-				
-									<span class="divider">
-						<img src="../media/system/images/arrow.png" alt="" />					</span>
-								<meta itemprop="position" content="1">
+						<div aria-label="Breadcrumbs" role="navigation">
+	<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+					<li>
+				You are here: &#160;
 			</li>
-					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
-				<span itemprop="name">
-					Important Dates				</span>
-				<meta itemprop="position" content="2">
-			</li>
-		</ul>
+		
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="../index.php.html" class="pathway"><span itemprop="name">Home</span></a>
+					
+											<span class="divider">
+							<img src="../media/system/images/arrow.png" alt="" />						</span>
+										<meta itemprop="position" content="1">
+				</li>
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+					<span itemprop="name">
+						Important Dates					</span>
+					<meta itemprop="position" content="2">
+				</li>
+				</ul>
+</div>
 		</div>
 	
 					<div id="system-message-container">
@@ -158,13 +161,14 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
 	
 		
 			<div class="page-header">
-					<h2 itemprop="headline">
-				Important Dates			</h2>
-									</div>
+		<h2 itemprop="headline">
+			Important Dates		</h2>
+							</div>
 					
+		
 	
 	
-				
+		
 								<div itemprop="articleBody">
 		<h2>Papers</h2>
 <table style="width: 500px;">
@@ -217,6 +221,7 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
 	
 							</div>
 
+					<div class="clearfix"></div>
 					
 					<!-- End Content -->
 				</main>
@@ -229,11 +234,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
 			<hr />
 			
 			<p class="pull-right">
-				<a href="important-dates.html#" id="back-top">
+				<a href="important-dates.html#top" id="back-top">
 					Back to Top				</a>
 			</p>
 			<p>
-				&copy; 2017 The 6th IEEE Symposium on Large Data Analysis and Visualization, held in conjunction with IEEE VIS 2016, Baltimore, Maryland. October 23, 2016			</p>
+				&copy; 2021 The 6th IEEE Symposium on Large Data Analysis and Visualization, held in conjunction with IEEE VIS 2016, Baltimore, Maryland. October 23, 2016			</p>
 		</div>
 	</footer>
 	

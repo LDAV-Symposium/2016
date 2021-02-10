@@ -28,11 +28,11 @@
 	<script src="../../../templates/protostar/js/template.js@cfc6bf7c5bcc4e381b16e50c99c32dc6"></script>
 	<!--[if lt IE 9]><script src="/media/jui/js/html5.js?cfc6bf7c5bcc4e381b16e50c99c32dc6"></script><![endif]-->
 	<script>
-jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+jQuery(function($){ initPopovers(); $("body").on("subform-row-add", initPopovers); function initPopovers (event, container) { $(container || document).find(".hasPopover").popover({"html": true,"trigger": "hover focus","container": "body"});} });jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
 	</script>
 
 </head>
-<body class="site com_users view- no-layout no-task">
+<body class="site com_users view-remind no-layout no-task itemid-101">
 	<!-- Body -->
 	<div class="body" id="top">
 		<div class="container">
@@ -113,7 +113,7 @@ jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips
 			</ul>
 		<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
-		<input type="hidden" name="return" value="aHR0cDovL2xkYXYyMDE2LnNjaS51dGFoLmVkdS9pbmRleC5waHAvY29tcG9uZW50L3VzZXJzLw==" />
+		<input type="hidden" name="return" value="aHR0cDovL2xkYXYyMDE2LnNjaS51dGFoLmVkdS9pbmRleC5waHAvY29tcG9uZW50L3VzZXJzLz92aWV3PXJlbWluZCZJdGVtaWQ9MTAx" />
 		<input type="hidden" name="8eb25037ac3a2597d4060bfbe1813e8a" value="1" />	</div>
 	</form>
 		</div>
@@ -148,63 +148,28 @@ jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips
 					<div id="system-message-container">
 	</div>
 
-					<div class="login">
-						<form action="http://ldav2016.sci.utah.edu/index.php/component/users/?task=user.login&amp;Itemid=101" method="post" class="form-validate form-horizontal well">
-		<fieldset>
-			
+					<div class="remind">
+		<form id="user-registration" action="http://ldav2016.sci.utah.edu/index.php/component/users/?task=remind.remind&amp;Itemid=101" method="post" class="form-validate form-horizontal well">
+					<fieldset>
+									<p>Please enter the email address associated with your User account. Your username will be emailed to the email address on file.</p>
+								
 <div class="control-group">
 			<div class="control-label">
-			<label id="username-lbl" for="username" class="required">
-	Username<span class="star">&#160;*</span></label>
+			<label id="jform_email-lbl" for="jform_email" class="hasPopover required" title="Email Address" data-content="Please enter the email address associated with your User account.&lt;br /&gt;Your username will be emailed to the email address on file.">
+	Email Address<span class="star">&#160;*</span></label>
 					</div>
 		<div class="controls">
-		<input type="text" name="username" id="username"  value="" class="validate-username required" size="25"       required aria-required="true"   autofocus    />
-	</div>
+		<input type="email" name="jform[email]" class="validate-email required" id="jform_email" value=""
+ size="30"    autocomplete="email"    required aria-required="true"  />	</div>
 </div>
-
-<div class="control-group">
-			<div class="control-label">
-			<label id="password-lbl" for="password" class="required">
-	Password<span class="star">&#160;*</span></label>
-					</div>
-		<div class="controls">
-		<input
-    type="password"
-    name="password"
-    id="password"
-    value=""
-      class="validate-password required"   size="25" maxlength="99" required aria-required="true" />	</div>
-</div>
-										<div class="control-group">
-					<div class="control-label">
-						<label for="remember">
-							Remember me						</label>
-					</div>
-					<div class="controls">
-						<input id="remember" type="checkbox" name="remember" class="inputbox" value="yes" />
-					</div>
-				</div>
-						<div class="control-group">
-				<div class="controls">
-					<button type="submit" class="btn btn-primary">
-						Log in					</button>
-				</div>
+			</fieldset>
+				<div class="control-group">
+			<div class="controls">
+				<button type="submit" class="btn btn-primary validate">
+					Submit				</button>
 			</div>
-						<input type="hidden" name="return" value="" />
-			<input type="hidden" name="8eb25037ac3a2597d4060bfbe1813e8a" value="1" />		</fieldset>
-	</form>
-</div>
-<div>
-	<ul class="nav nav-tabs nav-stacked">
-		<li>
-			<a href="index.html@view=reset&amp;Itemid=101.html">
-				Forgot your password?			</a>
-		</li>
-		<li>
-			<a href="index.html@view=remind&amp;Itemid=101.html">
-				Forgot your username?			</a>
-		</li>
-					</ul>
+		</div>
+		<input type="hidden" name="8eb25037ac3a2597d4060bfbe1813e8a" value="1" />	</form>
 </div>
 
 					<div class="clearfix"></div>
